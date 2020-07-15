@@ -1,35 +1,13 @@
- 1.var
- The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
- var is “function scoped”.
- 2.let
- The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
- “let” and “const” are“block scoped”.
-3.const 
-The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
-“const” cannot be re-assigned to a new value. However it CAN be mutated.
-3.code for var:
-function nodeSimplified(){
-    var a =10;
-    console.log(a); 
-    if(true){
-     var a=20;
-     console.log(a); 
-    }
-    console.log(a);  
-  }
-  5.code of let:
-  function nodeSimplified(){
-    let a =10;
-    console.log(a);  
-    if(true){
-     let a=20;
-     console.log(a); 
-    }
-    console.log(a);  
-  }
-  6.code for const:
-  function nodeSimplified(){
-    const MY_VARIABLE =10;
-    console.log(MY_VARIABLE);  
-  }
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Current Page</title>
+</head>
+<body>
+    <p></p>
+    <p>Click the button to print the current page.</p>
+    <button onclick="print_current_page()">Print this page</button>
+</body>
+</html>
