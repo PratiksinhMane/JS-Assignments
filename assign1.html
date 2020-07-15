@@ -1,23 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-// console.log("Failed to open the  link")
-function Person(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-}
+<!DOCTYPE html> 
+<html> 
 
-var john = new Person("pratik", "patil");
-var jane = new Person("priya", "Patil");
-var emily = new Person("juee", "Patil");
+<head> 
+	<title> 
+		print current day and time 
+	</title> 
+</head> 
 
-console.table(["pratik", "priya", "juee"]);
-</script>
-</body>
-</html>
+<body> 
+	<script type="text/javascript"> 
+		var myDate = new Date(); 
+		var myDay = myDate.getDay(); 
+		
+		 
+		var weekday = ['Sunday', 'Monday', 'Tuesday', 
+			'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+		]; 
+		document.write("Today is : " + weekday[myDay]); 
+		document.write("<br/>"); 
+		
+		
+		var hours = myDate.getHours(); 
+		var ampm = hours >= 12 ? 'PM' : 'AM'; 
+		hours = hours % 12; 
+		hours = hours ? hours : 12; 
+		var minutes = myDate.getMinutes(); 
+		minutes = minutes < 10 ? '0' + minutes : minutes; 
+		var myTime = hours + " " + ampm + " : " + minutes + 
+			" : " + myDate.getMilliseconds(); 
+		document.write("\tCurrent time is : " + myTime); 
+	</script> 
+</body> 
+
+</html> 
