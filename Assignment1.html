@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Assignment1</title>
+</head>
+<body>
+    <script>
+    for (var i = 1; i <= 100; i++) {
+        var message = '';
+        if (i%3 === 0) message += 'fizz,fizzbuzz';
+        if (i%5 === 0) message += 'buzz,fizzbuzz';
+        console.log(message || i);
+      }
+    </script>
+</body>
+</html>
