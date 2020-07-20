@@ -6,44 +6,17 @@
     <title>Assignment2</title>
 </head>
 <body>
-<script>
-    // ARRAY
-    
-    // 1.splice
-// let arr = ["I", "love", "JavaScript"];
-
-// arr.splice(1, 0); // from index 1 remove 0 element
-
-// alert( arr ); // ["I", "love ""JavaScript"]
-// 2.slice
-// let arr = ["t", "e", "s", "t"];
-
-// alert( arr.slice(1, 2) ); // e,s (copy from 1 to 3)
-
-// alert( arr.slice(-1) ); // s,t (copy from -2 till the end)
-// 3.concat
-// let arr = [1, 2];
-
-// create an array from: arr and [3,4]
-// alert( arr.concat([3, 4]) ); // 1,2,3,4
-
-// create an array from: arr and [3,4], then add values 5 and 6
-// alert( arr.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
-// STRING
-// 1.The slice() Method
-// var str = "Apple, Banana, Kiwi";
-// var res = str.slice(13, 20);
-// console.log(res);
-// 2.The substring() Method.
-//  substr() will slice out the rest of the string.
-// var str = "Apple, Banana, Kiwi";
-// var res = str.substr(8);
-
-// console.log(res);
-// 3.Replacing String Content
-str = "Please visit Microsoft!";
-var n = str.replace("Microsoft", "google");
-console.log(n);
-</script>
+    <script>
+        console.log('Object');
+        const student ={
+            name : 'Helsinki',
+            age  : 24,
+            projects : {
+                Dicegame : 'Two player dice game using JS'
+            }
+        }
+        function whois ({name,age,projects:{Dicegame:projects}}){return`His ${name} and ${age} there ${projects}`}
+        console.log(whois(student));
+    </script>
 </body>
 </html>
