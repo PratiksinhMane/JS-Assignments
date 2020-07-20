@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5</title>
+</head>
+<body>
+    <script>
+        var sales= prompt('Enter the total sale');
+        if (sales >= 0 && sales <= 5000){
+            var commition = sales*0.02;
+            console.log('Total commition of employe:',commition);
+        }else if (sales > 5000 && sales <= 10000){
+            var commition = sales * 0.05;
+            console.log('Total commition of employe:',commition);
+        }else if (sales > 10000 && sales <= 20000){
+            var commition = sales * 0.07
+            console.log('Total commition of employe:',commition);
+        } else {
+            var commition = sales * 0.10;
+            console.log('Total commition of employe:',commition);
+        }
+    </script>
+</body>
+</html>
