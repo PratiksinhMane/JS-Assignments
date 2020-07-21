@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>assignment1</title>
 </head>
 <body>
     <script>
-// console.log("Failed to open the  link")
-function Person(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
+        var el=prompt('Enter number of element');
+var inputArray = [];
+for (let i =0; i<=el;i++){
+    inputArray[i]=prompt('enter a number: ');
+    
 }
+for (let i =0 ;i<=el;i++){
+    console.log(inputArray);
+}
+let odd = inputArray.filter(el =>el%2 !== 0);
+let cubes = inputArray.map(el =>el*el*el);
 
-var john = new Person("pratik", "patil");
-var jane = new Person("priya", "Patil");
-var emily = new Person("juee", "Patil");
+console.log(odd);
+console.log(cubes);
 
-console.table(["pratik", "priya", "juee"]);
-</script>
+    </script>
 </body>
 </html>
