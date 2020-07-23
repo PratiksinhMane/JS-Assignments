@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment1</title>
+    <title>Assignment1</title>
 </head>
 <body>
+    <div id="background">&nbsp</div>
     <script>
-        var el=prompt('Enter number of element');
-var inputArray = [];
-for (let i =0; i<=el;i++){
-    inputArray[i]=prompt('enter a number: ');
-    
+        var i = 0;
+function change() {
+  var doc = document.getElementById("background");
+  var color = ["black", "blue", "brown", "green"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
 }
-for (let i =0 ;i<=el;i++){
-    console.log(inputArray);
-}
-let odd = inputArray.filter(el =>el%2 !== 0);
-let cubes = inputArray.map(el =>el*el*el);
-
-console.log(odd);
-console.log(cubes);
-
+setInterval(change, 5000);
     </script>
 </body>
 </html>
