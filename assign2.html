@@ -1,35 +1,56 @@
- 1.var
- The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
- var is “function scoped”.
- 2.let
- The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
- “let” and “const” are“block scoped”.
-3.const 
-The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
-“const” cannot be re-assigned to a new value. However it CAN be mutated.
-3.code for var:
-function nodeSimplified(){
-    var a =10;
-    console.log(a); 
-    if(true){
-     var a=20;
-     console.log(a); 
-    }
-    console.log(a);  
-  }
-  5.code of let:
-  function nodeSimplified(){
-    let a =10;
-    console.log(a);  
-    if(true){
-     let a=20;
-     console.log(a); 
-    }
-    console.log(a);  
-  }
-  6.code for const:
-  function nodeSimplified(){
-    const MY_VARIABLE =10;
-    console.log(MY_VARIABLE);  
-  }
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body>
+    <script>
+        const userOne = {
+            name : 'pratik',
+            age : 25,
+            email : 'P@gmail.com',
+            login(){
+                console.log ('You logged in');
+            },
+            logout(){
+                console.log('you logged out')
+            },
+        }
+        console.log(userOne.age);
+        class user {
+            constructor(name,age,email){
+                this.name=name;
+                this.age=age;
+                this.email=email;
+                this.lucoins =0;
+                this.course7 =[];
+            }
+            static greet(){
+                console.log(`this${name} Hey hii!!`);
+                return this;
+            }
+            getDetails(){
+                console.log(`Name is ${this.name} and ageis  ${this.age} and email is ${this.email}
+                `);
+                return this;
+
+            }
+            addCoins(){
+                this.lucoins++;
+                this.lucoins++;
+                console.log(`${this.name} has ${this.lucoins}`);
+                return this;
+
+            }
+            removeCoins(userOne,lucoins){
+                user.coins -=  coin;
+                console.log(`${userOne} have ${lucoins}`);
+                return this;
+            }
+            
+        }
+    </script>
+</body>
+</html>
