@@ -1,0 +1,23 @@
+body{
+    background-color: palegoldenrod;
+
+}
+#container{
+    background-color: palegreen;
+    border: 5px solid black;
+    height: 275px;
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+#btn{
+    margin: 50px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    background-color: burlywood;
+}
+#outPut{
+    margin: 25px auto;
+    font-size: 25px;
+}
